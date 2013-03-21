@@ -1,0 +1,57 @@
+{"proyectos":{
+    "numProyectos":2,
+    "listados":
+    [
+     {
+     "nombreProyecto":"Proyecto 1",
+     "estadoProyecto":"gris",
+     "numeroTareas":3,
+     "tareas":[
+               {
+               "idTarea":1,
+               "nombreTarea":"Tarea 1",
+               "imageTarea":"folder_black_scheduled_tasks.png",
+               "descTarea":"descripción de la tarea 1",
+               "estadoTarea":true
+               },
+               {
+               "idTarea":2,
+               "nombreTarea":"Tarea 2",
+               "imageTarea":"folder_blue_scheduled_tasks.png",
+               "descTarea":"descripción de la tarea 2",
+               "estadoTarea":false
+               },
+               {
+               "idTarea":3,
+               "nombreTarea":"Tarea 3",
+               "imageTarea":"folder_orange_scheduled_tasks.png",
+               "descTarea":"descripción de la tarea 3",
+               "estadoTarea":false
+               }
+               ]
+     },
+     {
+     "nombreProyecto":"Proyecto 2",
+     "estadoProyecto":"rojo",
+     "numeroTareas":2,
+     "tareas":[
+               {
+               "idTarea":1,
+               "nombreTarea":"Tarea 1",
+               "imageTarea":"folder_red_scheduled_tasks.png",
+               "descTarea":"descripción de la tarea 1 proyecto 2",
+               "estadoTarea":false
+               },
+               {
+               "idTarea":2,
+               "nombreTarea":"Tarea 2",
+               "imageTarea":"folder_yellow_scheduled_tasks.png",
+               "descTarea":"descripción de la tarea 2 Proyecto 2",
+               "estadoTarea":true
+               }
+               ]
+     }
+     
+     ]
+}
+}
