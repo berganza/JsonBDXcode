@@ -70,23 +70,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7DF4D8A216FB53940039A516 = {
+		7D1CF45B16FB5A59009F858C /* imagenes */ = {
 			isa = PBXGroup;
 			children = (
-				7DF4D8D116FB53FE0039A516 /* AppDelegate.h */,
-				7DF4D8D216FB53FE0039A516 /* AppDelegate.m */,
-				7DF4D8D416FB542C0039A516 /* MainStoryboard.storyboard */,
-				7DF4D8D616FB543D0039A516 /* CustomTableViewController.h */,
-				7DF4D8D716FB543D0039A516 /* CustomTableViewController.m */,
-				7DF4D8D816FB543D0039A516 /* CustomDetailViewController.h */,
-				7DF4D8D916FB543D0039A516 /* CustomDetailViewController.m */,
-				7DF4D8DC16FB54460039A516 /* proyectos.json */,
 				7DF4D8DE16FB54B80039A516 /* folder_black_scheduled_tasks.png */,
 				7DF4D8DF16FB54B80039A516 /* folder_blue_scheduled_tasks.png */,
 				7DF4D8E016FB54B80039A516 /* folder_green_scheduled_tasks.png */,
 				7DF4D8E116FB54B80039A516 /* folder_orange_scheduled_tasks.png */,
 				7DF4D8E216FB54B80039A516 /* folder_red_scheduled_tasks.png */,
 				7DF4D8E316FB54B80039A516 /* folder_yellow_scheduled_tasks.png */,
+			);
+			name = imagenes;
+			sourceTree = "<group>";
+		};
+		7D1CF45C16FB5A6C009F858C /* Archivos Delegados */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4D8D116FB53FE0039A516 /* AppDelegate.h */,
+				7DF4D8D216FB53FE0039A516 /* AppDelegate.m */,
+			);
+			name = "Archivos Delegados";
+			sourceTree = "<group>";
+		};
+		7D1CF45D16FB5A82009F858C /* Archivos TableView */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4D8D616FB543D0039A516 /* CustomTableViewController.h */,
+				7DF4D8D716FB543D0039A516 /* CustomTableViewController.m */,
+				7DF4D8D816FB543D0039A516 /* CustomDetailViewController.h */,
+				7DF4D8D916FB543D0039A516 /* CustomDetailViewController.m */,
+			);
+			name = "Archivos TableView";
+			sourceTree = "<group>";
+		};
+		7D1CF45E16FB5A99009F858C /* Archivo Json */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4D8DC16FB54460039A516 /* proyectos.json */,
+			);
+			name = "Archivo Json";
+			sourceTree = "<group>";
+		};
+		7D1CF45F16FB5AA4009F858C /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4D8D416FB542C0039A516 /* MainStoryboard.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7DF4D8A216FB53940039A516 = {
+			isa = PBXGroup;
+			children = (
+				7D1CF45C16FB5A6C009F858C /* Archivos Delegados */,
+				7D1CF45F16FB5AA4009F858C /* StoryBoard */,
+				7D1CF45D16FB5A82009F858C /* Archivos TableView */,
+				7D1CF45E16FB5A99009F858C /* Archivo Json */,
+				7D1CF45B16FB5A59009F858C /* imagenes */,
 				7DF4D8B416FB53940039A516 /* JsonBDXcode */,
 				7DF4D8AD16FB53940039A516 /* Frameworks */,
 				7DF4D8AC16FB53940039A516 /* Products */,
@@ -324,6 +364,7 @@
 				7DF4D8D016FB53940039A516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
