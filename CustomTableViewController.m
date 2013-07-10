@@ -15,13 +15,12 @@
 @implementation CustomTableViewController
 
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)viewDidAppear:(BOOL)animated {
     [_myTableView reloadData];
     [super viewDidAppear:animated];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
 	listOfItems = [[NSMutableArray alloc] init];
@@ -77,16 +76,16 @@
     
     static NSString *CellIdentifier = @"myCellView";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        //leemos el json
-		NSDictionary *dictionary = [listOfItems objectAtIndex:indexPath.section];
-        //tomamos el array actual que esta reflejado por la seccion activa del uitableview
-		NSArray *array = [dictionary objectForKey:@"tareas"];
+    //leemos el json
+    NSDictionary *dictionary = [listOfItems objectAtIndex:indexPath.section];
+    //tomamos el array actual que esta reflejado por la seccion activa del uitableview
+    NSArray *array = [dictionary objectForKey:@"tareas"];
 	//cargamos los valores con los datos del item actual
-    NSString *cellValue = [[array objectAtIndex:indexPath.row] objectForKey:@"nombreTarea" ];
+    NSString *cellValue = [[array objectAtIndex:indexPath.row] objectForKey:@"nombreTarea"];
     
-		cell.textLabel.text = cellValue;
+    cell.textLabel.text = cellValue;
     cell.detailTextLabel.text=[[array objectAtIndex:indexPath.row] objectForKey:@"descTarea"];
-    if ([[[array objectAtIndex:indexPath.row] objectForKey:@"estadoTarea"] boolValue ]) {
+    if ([[[array objectAtIndex:indexPath.row] objectForKey:@"estadoTarea"] boolValue]) {
         cell.textLabel.textColor=[UIColor greenColor];
     }
     else{
@@ -96,10 +95,12 @@
     
     return cell;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [_myTableView deselectRowAtIndexPath:indexPath animated:YES];
-}
+} 
+
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"goToDetail"]) {
         CustomDetailViewController * detalle = [segue destinationViewController];
@@ -107,7 +108,6 @@
 		NSArray *array = [dictionary objectForKey:@"tareas"];
         detalle.detail=[array objectAtIndex:_myTableView.indexPathForSelectedRow.row];
         detalle.detailJson=_json;
-        
     }
 }
 
